@@ -1,0 +1,6 @@
+secret.*
+*.tfstate
+*.tfstate.*
+key.json
+.terraform/*
+*.tfvars*

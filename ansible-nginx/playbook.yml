@@ -1,0 +1,30 @@
+---
+- name: Установить Nginx на веб-серверы
+  hosts: webservers
+  become: true
+  gather_facts: yes
+
+  tasks:
+    - name: Обновить списки пакетов (apt)
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+      tags:
+        - packages
+
+    - name: Установить nginx
+      apt:
+        name: nginx
+        state: present
+      tags:
+        - packages
+        - nginx
+
+    - name: Убедиться, что nginx запущен
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+      tags:
+        - service
+        - nginx

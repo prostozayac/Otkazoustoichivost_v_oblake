@@ -30,10 +30,16 @@
    Плэйбук установки Nginx:</br>
 [playbook.yml](./ansible-nginx/playbook.yml)</br>
 
-2. ![Балансировщик](./img/balanser.png)
+2. Балансировщик
+   ![Балансировщик](./img/balanser.png)
+
+   Curl запросы  
    ![Curl запросы](./img/curl.png)
 
-3. ![Запрос по WEB](./img/web-1.png)
+3. Первый запрос по WEB
+   ![Запрос по WEB](./img/web-1.png)
+
+   Второй запрос по WEB
    ![Запрос по WEB](./img/web-2.png) 
 
 ---
